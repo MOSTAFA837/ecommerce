@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
@@ -7,11 +7,11 @@ const connectDatabase = () => {
       useUnifiedTopology: true,
     })
     .then((data) => {
-      console.log(`Mongodb connected with server: ${data.connection.host}`)
+      console.log(`Mongodb connected with server: ${data.connection.host}`);
     })
     .catch((err) => {
-      console.log(err)
-    })
-}
+      console.log(err);
+    });
+};
 
-module.exports = connectDatabase
+module.exports = connectDatabase;
